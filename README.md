@@ -17,7 +17,7 @@ This project was developped by David Enriquez for the TTMC company.
 #### Explanation
 
 This project is built with the following layers : 
- - MySQl as database (hosted online for demo purpose)
+ - MySQl as database 
  - Express as front end web server
  - Node as back end web server
  - Sequilize as interaction framework between MySQL and Node 
@@ -25,6 +25,7 @@ This project is built with the following layers :
 
  The first layer of MySQl is hosted on localhost for development,
  Please edit connection string of file server/config/environment/developement.js according to your database server.
+ The empty database "ttmc" must exist before the start of the application.
  The script to create database (create_and_populate_tables) has been updated accordinately to the new schema with users-privileges relation n-m
  Every time the node server start (in dev mode by default), the database is dropped and created from the beggining with data.
 
